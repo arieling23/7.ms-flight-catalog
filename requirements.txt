@@ -1,0 +1,9 @@
+fastapi
+strawberry-graphql[fastapi]
+uvicorn
+sqlalchemy
+asyncpg
+databases
+python-dotenv
+pyjwt
+passlib[bcrypt]
