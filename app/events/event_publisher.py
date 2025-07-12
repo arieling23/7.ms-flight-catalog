@@ -2,7 +2,7 @@ import aio_pika
 import json
 from app.logger import logger
 
-RABBITMQ_URL = "amqp://ariel:rabbit123@3.232.44.72:5672"  # Ajusta si usas otro entorno
+RABBITMQ_URL = "amqp://ariel:rabbit123@3.232.44.72:5672"  
 
 async def publish_flight_created(flight_id: int):
     try:
