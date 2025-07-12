@@ -4,7 +4,7 @@ from app.models.flight import Flight
 from datetime import datetime
 from app.logger import logger
 from typing import Optional
-from app.events.event_publisher import publish_flight_created  # ✅ Nuevo import
+from app.events.event_publisher import publish_flight_created  
 
 class FlightService:
     @staticmethod
