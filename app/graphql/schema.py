@@ -1,5 +1,5 @@
 import strawberry
-from typing import List, Optional  # ✅ Importamos Optional
+from typing import List, Optional  
 from strawberry.types import Info
 from datetime import datetime
 
@@ -17,7 +17,7 @@ class Query:
         return await FlightService.get_all(session)
 
     @strawberry.field
-    async def flight(self, info: Info, id: int) -> Optional[FlightType]:  # ✅ Cambiado aquí
+    async def flight(self, info: Info, id: int) -> Optional[FlightType]:  
         session = info.context["session"]
         return await FlightService.get_by_id(session, id)
 
