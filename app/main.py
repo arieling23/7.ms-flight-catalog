@@ -22,7 +22,7 @@ app.add_middleware(
 async def get_context(request: Request):
     return {
         "request": request,
-        "session": await get_session().__anext__()  # forma de obtener la sesión async generator
+        "session": await get_session().__anext__()  
     }
 
 graphql_app = GraphQLRouter(schema, context_getter=get_context)
