@@ -31,7 +31,7 @@ class FlightService:
         await session.commit()
         await session.refresh(flight)
 
-        # ✅ Publicar evento para que se creen los asientos
+       
         await publish_flight_created(flight.id)
 
         return flight

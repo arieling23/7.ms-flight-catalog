@@ -39,5 +39,5 @@ class Mutation:
         session = info.context["session"]
         return await FlightService.create(session, code, origin, destination, departure_time)
 
-# Registrar schema
+
 schema = strawberry.Schema(query=Query, mutation=Mutation)
